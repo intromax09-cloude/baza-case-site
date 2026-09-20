@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BAZA CASE — чохли та аксесуари для iPhone | Рожище, доставка по Україні</title>
+<meta name="description" content="Чохли для iPhone 17 і 18 серії: силікон, прозорі, RIMOWA, шкіра, текстиль. Офлайн-магазин у Рожищі, відправка Новою Поштою в день замовлення.">
+<meta property="og:title" content="BAZA CASE — чохли та аксесуари для iPhone">
+<meta property="og:description" content="Оригінальна якість, наявність на 17 і 18 серію. Відправка в день замовлення.">
+<style>
+:root{
+  --bg:#ffffff; --surf:#f7f7f9; --surf2:#f1f1f4;
+  --ink:#0d0d11; --ink2:#3a3a44; --mut:#73737f; --line:#e8e8ee;
+  --pop:#5a4cf0; --pop-s:#efedff;
+  --ok:#12805c; --ok-s:#e6f5ef;
+  --warn:#8a5a00; --warn-s:#fdf3df;
+  --sh-s:0 1px 2px rgba(13,13,17,.06),0 4px 12px rgba(13,13,17,.05);
+  --sh-m:0 2px 6px rgba(13,13,17,.07),0 14px 34px rgba(13,13,17,.09);
+  --sh-l:0 8px 24px rgba(13,13,17,.10),0 32px 70px rgba(13,13,17,.16);
+  --r:16px; --r-l:24px; --max:1220px;
+  --ease:cubic-bezier(.22,.9,.28,1);
+  --f:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0c0c10; --surf:#141419; --surf2:#1b1b22;
+    --ink:#f4f4f7; --ink2:#c8c8d2; --mut:#93939f; --line:#26262f;
+    --pop:#8d84ff; --pop-s:#1f1c3a;
+    --ok:#5fd6a8; --ok-s:#11271f;
+    --warn:#e8bd6a; --warn-s:#2a2113;
+    --sh-s:0 1px 2px rgba(0,0,0,.4);
+    --sh-m:0 2px 8px rgba(0,0,0,.45),0 16px 40px rgba(0,0,0,.4);
+    --sh-l:0 12px 40px rgba(0,0,0,.55),0 40px 90px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- announcement ---------- */
+.ann{background:var(--warn-s);color:var(--warn);font-size:13px;text-align:center;padding:9px 20px;border-bottom:1px solid var(--line)}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:18px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.22em;font-size:14px;white-space:nowrap}
+.brand .dot{width:26px;height:26px;border-radius:8px;background:linear-gradient(140deg,var(--ink),#55555f);display:grid;place-items:center;color:var(--bg);font-size:12px;letter-spacing:0}
+.brand em{font-style:normal;color:var(--mut)}
+nav.main{display:flex;gap:6px;margin-left:12px}
+nav.main a{padding:9px 13px;border-radius:10px;font-size:14.5px;color:var(--ink2);transition:.18s var(--ease)}
+nav.main a:hover{background:var(--surf2);color:var(--ink)}
+.hd .grow{flex:1}
+.icon-btn{position:relative;display:grid;place-items:center;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:var(--bg);cursor:pointer;transition:.18s var(--ease)}
+.icon-btn:hover{border-color:var(--ink);transform:translateY(-1px)}
+.icon-btn svg{width:20px;height:20px}
+.badge{position:absolute;top:-6px;right:-6px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:var(--pop);color:#fff;font-size:11.5px;font-weight:700;display:grid;place-items:center;transform:scale(0);transition:transform .25s var(--ease)}
+.badge.on{transform:scale(1)}
+@media(max-width:900px){nav.main{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:74px 0 58px;border-bottom:1px solid var(--line)}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none}
+.b1{width:440px;height:440px;background:#c7c2ff;top:-160px;right:-90px;animation:float 16s ease-in-out infinite}
+.b2{width:360px;height:360px;background:#ffd9e2;bottom:-180px;left:-80px;animation:float 20s ease-in-out infinite reverse}
+@media (prefers-color-scheme:dark){.b1{background:#3a2fb0;opacity:.35}.b2{background:#5c2740;opacity:.3}}
+@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(-26px,24px)}}
+.hero-in{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+@media(max-width:940px){.hero-in{grid-template-columns:1fr}}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--pop-s);color:var(--pop);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:600;margin-bottom:18px}
+.pill .live{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.72)}}
+h1{max-width:15ch;font-size:clamp(34px,5.4vw,58px);line-height:1.04;letter-spacing:-.03em;margin:0 0 16px;font-weight:800}
+h1 .g{background:linear-gradient(100deg,var(--pop),#d26bb0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--mut);max-width:520px;margin:0 0 26px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:999px;padding:14px 24px;font-size:15.5px;font-weight:650;cursor:pointer;transition:.2s var(--ease);white-space:nowrap}
+.btn-dark{background:var(--ink);color:var(--bg)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:var(--sh-m)}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+.btn-pop{background:var(--pop);color:#fff}
+.btn-pop:hover{transform:translateY(-2px);box-shadow:0 10px 26px color-mix(in srgb,var(--pop) 40%,transparent)}
+.btn:disabled{opacity:.55;cursor:default;transform:none!important;box-shadow:none!important}
+.trust{display:flex;flex-wrap:wrap;gap:22px}
+.trust div{display:flex;gap:9px;align-items:flex-start;font-size:13.5px;color:var(--mut);max-width:190px}
+.trust svg{width:17px;height:17px;flex:none;margin-top:2px;color:var(--ok)}
+.showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.showcase .ph-wrap{animation:rise .9s var(--ease) backwards}
+.showcase .ph-wrap:nth-child(2){animation-delay:.1s;margin-top:26px}
+.showcase .ph-wrap:nth-child(3){animation-delay:.2s}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}}
+@media(max-width:940px){.showcase{max-width:420px}}
+
+/* ---------- phone mock ---------- */
+.ph-wrap{position:relative;border-radius:var(--r-l);background:var(--surf);padding:20px 16px;overflow:hidden;transition:.3s var(--ease)}
+.ph{position:relative;aspect-ratio:1/2.03;border-radius:15%/7.4%;margin:0 auto;width:78%;box-shadow:inset 0 0 0 1px rgba(0,0,0,.07),0 10px 26px rgba(0,0,0,.14);transition:.4s var(--ease)}
+.ph::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.34) 0 32%,transparent 46%);pointer-events:none}
+.ph .cam{position:absolute;left:9%;top:4.6%;width:44%;aspect-ratio:1.18/1;border-radius:26%;background:rgba(255,255,255,.14);box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);display:grid;grid-template-columns:1fr 1fr;gap:6%;padding:9%}
+.ph .cam i{border-radius:50%;background:radial-gradient(circle at 34% 30%,#6d7480,#1a1c22 62%);box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22)}
+.ph .cam i:nth-child(3){grid-column:1/2}
+.ph.ribbed{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.42) 0 2px,rgba(255,255,255,.10) 2px 5px,rgba(0,0,0,.16) 5px 7px,transparent 7px 14px)}
+.ph.clear{background-color:rgba(150,160,180,.16)!important;box-shadow:inset 0 0 0 1.6px rgba(120,130,150,.42),0 10px 26px rgba(0,0,0,.1)}
+.ph.woven{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.14) 0 2px,transparent 2px 5px),repeating-linear-gradient(-45deg,rgba(0,0,0,.09) 0 2px,transparent 2px 5px)}
+.ph.leather{background-image:radial-gradient(circle at 20% 25%,rgba(255,255,255,.14) 0 2px,transparent 3px),radial-gradient(circle at 62% 66%,rgba(0,0,0,.13) 0 2px,transparent 3px);background-size:11px 11px}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- categories ---------- */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;padding:34px 0}
+.cat-t{border:1px solid var(--line);border-radius:var(--r);padding:16px;background:var(--bg);cursor:pointer;text-align:left;transition:.22s var(--ease)}
+.cat-t:hover{transform:translateY(-3px);box-shadow:var(--sh-m);border-color:transparent}
+.cat-t .sw{display:flex;gap:4px;margin-bottom:12px}
+.cat-t .sw i{width:16px;height:22px;border-radius:5px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08)}
+.cat-t b{display:block;font-size:15px}
+.cat-t span{font-size:13px;color:var(--mut)}
+
+/* ---------- toolbar ---------- */
+.tools{position:sticky;top:68px;z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0}
+.tools-in{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.search{position:relative;flex:1;min-width:190px}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--mut)}
+.search input{width:100%;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:11px 13px 11px 38px;font-size:14.5px}
+.search input:focus{outline:none;border-color:var(--pop);background:var(--bg)}
+select.ctl{background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:11px 13px;font-size:14.5px;cursor:pointer}
+select.ctl:focus{outline:none;border-color:var(--pop)}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:12px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{white-space:nowrap;border:1px solid var(--line);background:var(--bg);color:var(--ink2);border-radius:999px;padding:8px 15px;font-size:14px;cursor:pointer;transition:.18s var(--ease)}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink);font-weight:600}
+.found{font-size:13.5px;color:var(--mut);padding:10px 0 0}
+
+/* ---------- grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:20px;padding:26px 0 8px}
+.card{border:1px solid var(--line);border-radius:var(--r-l);background:var(--bg);overflow:hidden;display:flex;flex-direction:column;transition:.26s var(--ease);position:relative}
+.card:hover{transform:translateY(-5px);box-shadow:var(--sh-m);border-color:transparent}
+.media{position:relative;background:var(--surf);padding:22px 16px;cursor:pointer;overflow:hidden}
+.media .ph{width:62%}
+.shotimg{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px;transition:transform .5s var(--ease)}
+.card:hover .shotimg{transform:scale(1.045)}
+.media{padding:12px}
+.ci .thumb{padding:0;overflow:hidden}
+.ci .thumb .shotimg{border-radius:11px}
+.pv .shotbox{border-radius:var(--r);overflow:hidden;background:var(--surf)}
+.showcase .ph-wrap{padding:10px}
+.card:hover .ph{transform:translateY(-6px) rotate(-2.5deg)}
+.tags{position:absolute;left:12px;top:12px;display:flex;flex-direction:column;gap:6px;align-items:flex-start}
+.tag{font-size:11px;font-weight:700;letter-spacing:.04em;padding:5px 9px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.tag.new{background:var(--pop)}
+.tag.hit{background:#d2603f}
+.quick{position:absolute;inset:auto 12px 12px;display:flex;gap:8px;opacity:0;transform:translateY(8px);transition:.22s var(--ease)}
+.card:hover .quick{opacity:1;transform:none}
+.quick button{flex:1;border:1px solid var(--line);background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(6px);border-radius:10px;padding:9px;font-size:13px;cursor:pointer;transition:.18s var(--ease)}
+.quick button:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+@media(hover:none){.quick{opacity:1;transform:none}}
+.cbody{padding:16px 16px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.kicker{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.cname{font-size:16px;font-weight:700;line-height:1.3;margin:0;cursor:pointer}
+.cname:hover{color:var(--pop)}
+.swatches{display:flex;gap:6px;flex-wrap:wrap}
+.swatches i{width:19px;height:19px;border-radius:50%;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.13);transition:.16s var(--ease)}
+.swatches i:hover{transform:scale(1.16)}
+.swatches i[data-on="1"]{box-shadow:inset 0 0 0 1px rgba(0,0,0,.13),0 0 0 2px var(--bg),0 0 0 4px var(--ink)}
+.meta{font-size:12.5px;color:var(--mut)}
+.stock{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ok);font-weight:600}
+.stock i{width:6px;height:6px;border-radius:50%;background:currentColor}
+.cfoot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px}
+.price{font-size:21px;font-weight:800;letter-spacing:-.02em}
+.price small{font-size:13px;font-weight:600;color:var(--mut);margin-left:3px}
+.price.ask{font-size:14.5px;font-weight:650;color:var(--mut)}
+.add{white-space:nowrap;border:0;border-radius:12px;background:var(--ink);color:var(--bg);padding:11px 16px;font-size:14px;font-weight:650;cursor:pointer;transition:.18s var(--ease)}
+.add:hover{transform:translateY(-2px);box-shadow:var(--sh-m)}
+.add.added{background:var(--ok)}
+@media(max-width:620px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}.media{padding:14px 8px}.media .ph{width:74%}.cbody{padding:12px 12px 14px;gap:6px}.cname{font-size:14px}.price{font-size:17px}.add{padding:10px 12px;font-size:13px;width:100%}.cfoot{flex-direction:column;align-items:stretch;gap:9px}.meta{font-size:11.5px}.tag{font-size:10px;padding:4px 7px}}
+.none{padding:56px 0;text-align:center;color:var(--mut)}
+.none b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
+
+/* ---------- sections ---------- */
+section.blk{padding:70px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(25px,3.4vw,36px);margin:0 0 10px;letter-spacing:-.02em;font-weight:800}
+.sub{color:var(--mut);margin:0 0 30px;max-width:640px;font-size:16.5px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.box{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:var(--bg);transition:.22s var(--ease)}
+.box:hover{transform:translateY(-3px);box-shadow:var(--sh-m);border-color:transparent}
+.box .ic{width:40px;height:40px;border-radius:12px;background:var(--pop-s);color:var(--pop);display:grid;place-items:center;margin-bottom:13px}
+.box .ic svg{width:20px;height:20px}
+.box h3{margin:0 0 7px;font-size:16.5px}
+.box p{margin:0;color:var(--mut);font-size:14.5px}
+.faq{border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:last-child{border-bottom:0}
+.faq summary{cursor:pointer;padding:18px 20px;font-weight:650;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;transition:.18s var(--ease)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{background:var(--surf)}
+.faq summary::after{content:"+";font-size:21px;color:var(--mut);transition:.24s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 20px 20px;color:var(--mut);font-size:15px}
+
+/* ---------- drawer / modal ---------- */
+.scrim{position:fixed;inset:0;background:rgba(10,10,14,.5);backdrop-filter:blur(3px);opacity:0;pointer-events:none;transition:opacity .3s var(--ease);z-index:90}
+.scrim.on{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(430px,100%);background:var(--bg);z-index:100;display:flex;flex-direction:column;transform:translateX(102%);transition:transform .38s var(--ease);box-shadow:var(--sh-l)}
+.drawer.on{transform:none}
+.dhead{display:flex;align-items:center;justify-content:space-between;padding:20px;border-bottom:1px solid var(--line)}
+.dhead h3{margin:0;font-size:19px}
+.close{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--bg);cursor:pointer;display:grid;place-items:center;transition:.18s var(--ease)}
+.close:hover{background:var(--surf);border-color:var(--ink)}
+.dbody{flex:1;overflow-y:auto;padding:16px 20px}
+.dfoot{border-top:1px solid var(--line);padding:18px 20px 22px;background:var(--bg)}
+.line{display:flex;justify-content:space-between;font-size:14.5px;color:var(--mut);margin-bottom:8px}
+.line.total{font-size:19px;font-weight:800;color:var(--ink);margin:12px 0 16px}
+.ci{display:grid;grid-template-columns:62px 1fr auto;gap:13px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center;animation:fade .3s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateX(12px)}}
+.ci .thumb{border-radius:11px;background:var(--surf);padding:8px 6px}
+.ci .thumb .ph{width:100%}
+.ci b{font-size:14.5px;display:block;line-height:1.35}
+.ci .s{font-size:12.5px;color:var(--mut)}
+.qty{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--line);border-radius:10px;margin-top:7px}
+.qty button{width:28px;height:28px;border:0;background:transparent;cursor:pointer;font-size:16px;border-radius:8px;color:var(--ink2)}
+.qty button:hover{background:var(--surf2)}
+.qty span{min-width:24px;text-align:center;font-size:14px;font-weight:650}
+.rm{border:0;background:transparent;color:var(--mut);cursor:pointer;font-size:12.5px;text-decoration:underline;padding:0;margin-top:7px}
+.rm:hover{color:#c0392b}
+.empty-cart{text-align:center;padding:56px 10px;color:var(--mut)}
+.empty-cart svg{width:46px;height:46px;opacity:.35;margin-bottom:14px}
+
+.modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .28s var(--ease)}
+.modal.on{opacity:1;pointer-events:auto}
+.sheet{background:var(--bg);border-radius:var(--r-l);width:min(620px,100%);max-height:90vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--sh-l);transform:translateY(18px) scale(.985);transition:transform .32s var(--ease)}
+.modal.on .sheet{transform:none}
+.sbody{overflow-y:auto;padding:22px}
+.pv{display:grid;grid-template-columns:200px 1fr;gap:22px}
+@media(max-width:560px){.pv{grid-template-columns:1fr}}
+.pv .ph-wrap{background:var(--surf)}
+
+/* ---------- forms ---------- */
+.steps{display:flex;gap:8px;padding:0 22px 4px}
+.step{flex:1;height:4px;border-radius:999px;background:var(--line);overflow:hidden}
+.step i{display:block;height:100%;width:0;background:var(--pop);transition:width .4s var(--ease)}
+.step.fin i,.step.now i{width:100%}
+.step.now i{background:var(--pop)}
+.fg{margin-bottom:15px}
+label{display:block;font-size:13px;color:var(--mut);margin-bottom:6px;font-weight:600}
+input.fld,select.fld,textarea.fld{width:100%;background:var(--surf);border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:15px}
+input.fld:focus,select.fld:focus,textarea.fld:focus{outline:none;border-color:var(--pop);background:var(--bg);box-shadow:0 0 0 3px var(--pop-s)}
+textarea.fld{min-height:84px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+.err{border-color:#d9534f!important}
+.errtxt{color:#d9534f;font-size:12.5px;margin-top:5px;display:none}
+.errtxt.on{display:block}
+.pay{display:grid;gap:10px}
+.pay label{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:14px;padding:14px;cursor:pointer;margin:0;font-weight:400;color:var(--ink);transition:.18s var(--ease)}
+.pay label:hover{border-color:var(--ink)}
+.pay input{margin-top:3px;accent-color:var(--pop)}
+.pay label:has(input:checked){border-color:var(--pop);background:var(--pop-s)}
+.pay label>span{flex:1;min-width:0}
+.pay b{display:block;font-size:15px}
+.pay span{font-size:13.5px;color:var(--mut)}
+.sum{background:var(--surf);border-radius:14px;padding:16px;margin-bottom:16px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.done{text-align:center;padding:26px 10px}
+.done .tick{width:66px;height:66px;border-radius:50%;background:var(--ok-s);color:var(--ok);display:grid;place-items:center;margin:0 auto 18px;animation:pop .45s var(--ease)}
+@keyframes pop{from{transform:scale(.4);opacity:0}}
+.done .tick svg{width:32px;height:32px}
+.done h3{margin:0 0 8px;font-size:22px}
+.done p{color:var(--mut);margin:0 0 6px}
+.onum{display:inline-block;background:var(--surf);border-radius:10px;padding:8px 14px;font-weight:700;letter-spacing:.04em;margin:12px 0 20px}
+
+/* ---------- toast ---------- */
+.toasts{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:120;display:flex;flex-direction:column;gap:9px;align-items:center;pointer-events:none}
+.toast{background:var(--ink);color:var(--bg);border-radius:12px;padding:12px 18px;font-size:14.5px;box-shadow:var(--sh-m);animation:tin .3s var(--ease);max-width:90vw}
+@keyframes tin{from{opacity:0;transform:translateY(14px)}}
+
+/* ---------- top ---------- */
+.top{position:fixed;right:20px;bottom:20px;z-index:70;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--bg);box-shadow:var(--sh-s);cursor:pointer;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s var(--ease)}
+.top.on{opacity:1;pointer-events:auto}
+.top:hover{transform:translateY(-3px)}
+
+footer{border-top:1px solid var(--line);padding:46px 0 58px;color:var(--mut);font-size:14.5px;background:var(--surf)}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+@media(max-width:760px){.fcols{grid-template-columns:1fr}}
+footer h4{color:var(--ink);font-size:14px;margin:0 0 12px;letter-spacing:.04em;text-transform:uppercase}
+footer a:hover{color:var(--ink)}
+.fbot{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;font-size:13px}
+</style>
+</head>
+<body>
+
+<div class="ann">Чернетка каталогу · зібрана з постів @baza_case_ · ціни та склад позицій потребують перевірки</div>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="#top"><span class="dot">B</span>BAZA<em>CASE</em></a>
+    <nav class="main">
+      <a href="#catalog">Каталог</a>
+      <a href="#why">Чому ми</a>
+      <a href="#delivery">Доставка і оплата</a>
+      <a href="#faq">Питання</a>
+    </nav>
+    <div class="grow"></div>
+    <button class="icon-btn" id="openCart" aria-label="Кошик">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 12.2a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 2-1.6L21 7H5.4"/></svg>
+      <span class="badge" id="cartBadge">0</span>
+    </button>
+  </div>
+</header>
+
+<a id="top"></a>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-in">
+    <div>
+      <span class="pill"><span class="live"></span>В наявності на 17 та 18 серію</span>
+      <h1><span class="g">Чохли</span>, які хочеться<br>показувати</h1>
+      <p class="lead">Силікон оригінальної якості, прозорі з MagSafe, рифлені RIMOWA, шкіра й текстиль. Офлайн-магазин у Рожищі та відправка Новою Поштою по всій Україні.</p>
+      <div class="hero-cta">
+        <a class="btn btn-dark" href="#catalog">Перейти до каталогу</a>
+        <a class="btn btn-ghost" href="#delivery">Умови доставки</a>
+      </div>
+      <div class="trust">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><span>Відправка в день замовлення до 15:00</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><span>Оплата при отриманні</span></div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg><span>14 днів на обмін</span></div>
+      </div>
+    </div>
+    <div class="showcase" aria-hidden="true">
+      <div class="ph-wrap"><img class="shotimg" src="img/rim-alu.jpg" alt=""></div>
+      <div class="ph-wrap"><img class="shotimg" src="img/sil-chalk.jpg" alt=""></div>
+      <div class="ph-wrap"><img class="shotimg" src="img/clr-spc.jpg" alt=""></div>
+    </div>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="wrap">
+  <div class="cats rv" id="cats"></div>
+</div>
+
+<!-- TOOLBAR -->
+<div class="tools" id="catalog">
+  <div class="wrap">
+    <div class="tools-in">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        <input id="q" type="search" placeholder="Пошук: rimowa, силікон, прозорий…" aria-label="Пошук по каталогу">
+      </div>
+      <select class="ctl" id="fModel" aria-label="Модель iPhone">
+        <option value="">Будь-яка модель</option>
+        <option>17</option><option>17 Pro</option><option>17 Pro Max</option>
+        <option>18 Pro</option><option>18 Pro Max</option>
+      </select>
+      <select class="ctl" id="fSort" aria-label="Сортування">
+        <option value="pop">За популярністю</option>
+        <option value="asc">Спочатку дешевші</option>
+        <option value="desc">Спочатку дорожчі</option>
+        <option value="new">Новинки</option>
+      </select>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="found" id="found"></div>
+  <div class="grid" id="grid"></div>
+  <div class="none" id="none" style="display:none">
+    <b>Нічого не знайшли</b>
+    Спробуйте інший запит або скиньте фільтри.
+    <div style="margin-top:16px"><button class="btn btn-ghost" id="reset">Скинути фільтри</button></div>
+  </div>
+</main>
+
+<!-- WHY -->
+<section class="blk" id="why">
+  <div class="wrap rv">
+    <h2>Чому в нас купують</h2>
+    <p class="sub">Три роки в аксесуарах для Apple, офлайн-точка в Рожищі та 7 400 підписників, які бачать кожну новинку першими.</p>
+    <div class="cols">
+      <div class="box"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Оригінальна якість</h3><p>Не «репліка з ринку»: щільний силікон, мікрофібра всередині, колір логотипа в колір кнопок.</p></div>
+      <div class="box"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="14" height="12" rx="2"/><path d="M15 10h4l3 3.5V18h-7z"/><circle cx="6" cy="18.5" r="1.7"/><circle cx="18" cy="18.5" r="1.7"/></svg></div><h3>Відправка того ж дня</h3><p>Замовлення до 15:00 їде Новою Поштою сьогодні. Номер ТТН приходить одразу після відправки.</p></div>
+      <div class="box"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg></div><h3>14 днів на обмін</h3><p>Не підійшов колір або модель — міняємо, якщо чохол не був у використанні та збережена упаковка.</p></div>
+      <div class="box"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.5L3 21l1-4.3A8.4 8.4 0 1 1 21 11.5z"/></svg></div><h3>Відповідаємо швидко</h3><p>Питання по моделі чи кольору — пишіть у Direct. Замовлення з сайту бачимо одразу.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="blk" id="delivery">
+  <div class="wrap rv">
+    <h2>Доставка і оплата</h2>
+    <p class="sub">Працюємо по всій Україні. Самовивіз — у Рожищі, вул. Незалежності 18.</p>
+    <div class="cols">
+      <div class="box"><h3>Нова Пошта — відділення</h3><p>1–2 дні по Україні. Вартість за тарифами перевізника. Відправка в день замовлення при оформленні до 15:00.</p></div>
+      <div class="box"><h3>Кур'єр Нової Пошти</h3><p>Доставка за адресою в межах міста. Оформлюється так само, просто вкажіть адресу в коментарі.</p></div>
+      <div class="box"><h3>Самовивіз</h3><p>м. Рожище, вул. Незалежності 18. Можна приміряти чохол на свій телефон і забрати одразу.</p></div>
+      <div class="box"><h3>Оплата</h3><p>Накладений платіж при отриманні, переказ на картку або готівка при самовивозі. Як вам зручніше.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="blk" id="faq">
+  <div class="wrap rv">
+    <h2>Часті питання</h2>
+    <p class="sub">Якщо чогось тут немає — напишіть у Direct, відповімо особисто.</p>
+    <div class="faq">
+      <details open><summary>Як дізнатись, чи є чохол на мою модель?</summary><div class="ans">У картці кожного товару вказані моделі, на які він є. Якщо вашої немає у списку — напишіть, часто привозимо під замовлення за кілька днів.</div></details>
+      <details><summary>Чи підходять чохли з MagSafe до бездротової зарядки?</summary><div class="ans">Так. Магнітне кільце всередині тримає зарядку, PopSocket і автотримач, зарядка працює без зняття чохла.</div></details>
+      <details><summary>Прозорий чохол жовтіє з часом?</summary><div class="ans">Дешевий TPU — так. У наших прозорих моделях гібридний матеріал із захистом від УФ, він тримає прозорість значно довше.</div></details>
+      <details><summary>Скільки чекати доставку?</summary><div class="ans">Відправляємо в день замовлення, якщо оформили до 15:00. Нова Пошта везе 1–2 дні по Україні.</div></details>
+      <details><summary>Чи можна обміняти, якщо не підійшов колір?</summary><div class="ans">Так, 14 днів на обмін за умови, що чохол не використовувався і збережено упаковку.</div></details>
+      <details><summary>Робите чохли з власним дизайном?</summary><div class="ans">Так, custom case під друк. Напишіть у формі замовлення в коментарі — порахуємо окремо.</div></details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="brand" style="margin-bottom:12px"><span class="dot">B</span>BAZA<em>CASE</em></div>
+        <p style="margin:0;max-width:330px">Чохли, ремінці, скло, стікери та custom case для iPhone, Apple Watch, AirPods та iPad.</p>
+      </div>
+      <div>
+        <h4>Магазин</h4>
+        <p style="margin:0 0 6px"><a href="#catalog">Каталог</a></p>
+        <p style="margin:0 0 6px"><a href="#delivery">Доставка і оплата</a></p>
+        <p style="margin:0"><a href="#faq">Часті питання</a></p>
+      </div>
+      <div>
+        <h4>Контакти</h4>
+        <p style="margin:0 0 6px">м. Рожище, вул. Незалежності 18</p>
+        <p style="margin:0 0 6px"><a href="https://www.instagram.com/baza_case_/" target="_blank" rel="noopener">Instagram @baza_case_</a></p>
+        <p style="margin:0">Пн–Сб 10:00–19:00</p>
+      </div>
+    </div>
+    <div class="fbot">© 2026 BAZA CASE. Чернетка сайту.</div>
+  </div>
+</footer>
+
+<button class="top" id="toTop" aria-label="Нагору"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg></button>
+
+<div class="scrim" id="scrim"></div>
+
+<!-- CART -->
+<aside class="drawer" id="cart" aria-label="Кошик">
+  <div class="dhead">
+    <h3>Кошик</h3>
+    <button class="close" data-close aria-label="Закрити">✕</button>
+  </div>
+  <div class="dbody" id="cartBody"></div>
+  <div class="dfoot" id="cartFoot" style="display:none">
+    <div class="line"><span>Товарів</span><span id="cCount">0</span></div>
+    <div class="line"><span>Доставка</span><span>за тарифами НП</span></div>
+    <div class="line total"><span>До сплати</span><span id="cTotal">0 грн</span></div>
+    <button class="btn btn-dark" style="width:100%" id="toCheckout">Оформити замовлення</button>
+  </div>
+</aside>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="pvModal">
+  <div class="sheet">
+    <div class="dhead"><h3 id="pvTitle">Товар</h3><button class="close" data-close aria-label="Закрити">✕</button></div>
+    <div class="sbody"><div class="pv">
+      <div><div class="shotbox" id="pvShot"></div></div>
+      <div>
+        <div class="kicker" id="pvCat"></div>
+        <p class="meta" id="pvDesc" style="margin:8px 0 14px;font-size:14.5px;color:var(--ink2)"></p>
+        <div class="fg"><label>Колір</label><div class="swatches" id="pvSw"></div></div>
+        <div class="fg"><label for="pvModel">Модель</label><select class="fld" id="pvModel"></select></div>
+        <div class="fg"><label>Кількість</label>
+          <div class="qty" id="pvQty"><button data-d="-1">−</button><span>1</span><button data-d="1">+</button></div>
+        </div>
+        <div class="cfoot" style="padding-top:4px">
+          <div class="price" id="pvPrice"></div>
+          <button class="btn btn-dark" id="pvAdd">У кошик</button>
+        </div>
+      </div>
+    </div></div>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="coModal">
+  <div class="sheet">
+    <div class="dhead"><h3 id="coTitle">Оформлення замовлення</h3><button class="close" data-close aria-label="Закрити">✕</button></div>
+    <div class="steps" id="coSteps">
+      <div class="step now"><i></i></div><div class="step"><i></i></div><div class="step"><i></i></div>
+    </div>
+    <div class="sbody">
+      <form id="coForm" novalidate>
+        <!-- step 1 -->
+        <div data-step="1">
+          <div class="row2">
+            <div class="fg"><label for="fName">Ім'я та прізвище *</label><input class="fld" id="fName" name="name" placeholder="Олена Ковальчук" autocomplete="name"><div class="errtxt">Вкажіть ім'я</div></div>
+            <div class="fg"><label for="fPhone">Телефон *</label><input class="fld" id="fPhone" name="phone" inputmode="tel" placeholder="+380 __ ___ __ __" autocomplete="tel"><div class="errtxt">Вкажіть коректний телефон</div></div>
+          </div>
+          <div class="fg"><label for="fMail">E-mail (необов'язково)</label><input class="fld" id="fMail" name="email" type="email" placeholder="для електронної накладної" autocomplete="email"></div>
+        </div>
+        <!-- step 2 -->
+        <div data-step="2" hidden>
+          <div class="fg"><label for="fShip">Спосіб доставки</label>
+            <select class="fld" id="fShip" name="shipping">
+              <option>Нова Пошта — відділення</option>
+              <option>Нова Пошта — кур'єр за адресою</option>
+              <option>Самовивіз, м. Рожище</option>
+            </select>
+          </div>
+          <div class="row2">
+            <div class="fg"><label for="fCity">Місто *</label><input class="fld" id="fCity" name="city" placeholder="Луцьк"><div class="errtxt">Вкажіть місто</div></div>
+            <div class="fg"><label for="fBranch">Відділення / адреса *</label><input class="fld" id="fBranch" name="branch" placeholder="НП №7 або вулиця, будинок"><div class="errtxt">Вкажіть відділення або адресу</div></div>
+          </div>
+          <div class="fg"><label for="fNote">Коментар до замовлення</label><textarea class="fld" id="fNote" name="note" placeholder="Бажаний колір, побажання по упаковці, питання"></textarea></div>
+        </div>
+        <!-- step 3 -->
+        <div data-step="3" hidden>
+          <div class="sum" id="coSum"></div>
+          <div class="fg"><label>Спосіб оплати</label>
+            <div class="pay">
+              <label><input type="radio" name="payment" value="Накладений платіж" checked><span><b>Накладений платіж</b><span>Оплата при отриманні на пошті</span></span></label>
+              <label><input type="radio" name="payment" value="Переказ на картку"><span><b>Переказ на картку</b><span>Реквізити надішлемо після підтвердження</span></span></label>
+              <label><input type="radio" name="payment" value="Готівка при самовивозі"><span><b>Готівка при самовивозі</b><span>Оплата в магазині в Рожищі</span></span></label>
+            </div>
+          </div>
+          <div class="hp"><label>Не заповнюйте<input name="website" tabindex="-1" autocomplete="off"></label></div>
+        </div>
+        <div class="hp"><input name="_" tabindex="-1"></div>
+      </form>
+      <div id="coDone" hidden class="done">
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
+        <h3>Замовлення прийнято</h3>
+        <p>Ми вже його бачимо і скоро зв'яжемось, щоб підтвердити деталі.</p>
+        <p id="coDemo" hidden style="color:var(--warn);background:var(--warn-s);border-radius:10px;padding:10px 14px;display:inline-block">Локальний перегляд: заявка нікуди не відправлена. На сервері вона піде в Telegram.</p>
+        <div class="onum" id="coNum"></div>
+        <div><button class="btn btn-ghost" data-close>Продовжити покупки</button></div>
+      </div>
+    </div>
+    <div class="dfoot" id="coFoot">
+      <div style="display:flex;gap:10px">
+        <button class="btn btn-ghost" id="coBack" style="display:none">Назад</button>
+        <button class="btn btn-dark" id="coNext" style="flex:1">Далі</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script>
+/* ============ ДАНІ. Зібрано з постів @baza_case_ 20.09.2026 ============ */
+const CAT = {
+  sil:'Силіконові', clear:'Прозорі', rimowa:'RIMOWA', leather:'Шкіряні',
+  fabric:'Текстильні', other:'Дизайнерські', straps:'Ремінці', glass:'Скло', custom:'Custom'
+};
+const C = {
+  silver:'#c3c8cd', black:'#212228', beige:'#d8cbb4', bordo:'#6b2330', pink:'#efc4d0',
+  chalk:'#f0d3d8', vanilla:'#efe5d1', blue:'#27334c', red:'#c8442f', green:'#7c8a6e',
+  brown:'#6c4a33', clear:'#dfe4ea', white:'#eceef0', orange:'#e08a4e'
+};
+const P = [
+ {id:'rim-alu', n:'RIMOWA CASE — алюміній', c:'rimowa', p:1799, st:'ribbed', hit:1,
+  d:'Рифлений корпус у стилі культових валіз Rimowa. Захист від подряпин, точна посадка, легкий.',
+  m:['17 Pro','17 Pro Max','18 Pro','18 Pro Max'],
+  cols:[['Silver',C.silver],['Black',C.black],['Beige',C.beige],['Bordeaux',C.bordo],['Pink',C.pink]], s:'Dc0oC0MCCLi'},
+ {id:'rim-mag', n:'RIMOWA CASE with MagSafe', c:'rimowa', p:1899, st:'ribbed', nw:1,
+  d:'Та сама рифлена лінія плюс магнітне кільце MagSafe. Трендовий рожевий сезону.',
+  m:['17 Pro','17 Pro Max','18 Pro','18 Pro Max'], cols:[['Pink',C.pink],['Silver',C.silver]], s:'DdTJE6YiFl1'},
+ {id:'rim-bor', n:'RIMOWA CASE — Bordeaux', c:'rimowa', p:null, st:'ribbed',
+  d:'Винний відтінок сезону на культовому рифленому корпусі.',
+  m:['17 Pro','17 Pro Max','18 Pro','18 Pro Max'], cols:[['Bordeaux',C.bordo]], s:'DdD1MSpCG8B'},
+ {id:'clr-mag', n:'CLEAR CASE with MagSafe', c:'clear', p:849, st:'clear', hit:1,
+  d:'Прозорий, з захистом від пожовтіння. Посилені бортики камери, магніт для зарядки та аксесуарів.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['Прозорий',C.clear]], s:'DctvRYmkRk1'},
+ {id:'clr-spc', n:'CLEAR CASE SPACE', c:'clear', p:null, st:'clear',
+  d:'Жорстка прозора основа, 3D-кнопки, високі бортики над екраном і камерою.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['Прозорий',C.clear]], s:'DctK-QsCMRb'},
+ {id:'sil-van', n:'SILICONE CASE — Vanilla', c:'sil', p:949, st:'plain', nw:1,
+  d:'Silicone case оригінальної якості: MagSafe, мікрофібра всередині, покриття soft-touch.',
+  m:['17 Pro','17 Pro Max','18 Pro','18 Pro Max'], cols:[['Vanilla',C.vanilla]], s:'Dc7-vLPiLAo'},
+ {id:'sil-17', n:'SILICONE CASE org — 17 серія', c:'sil', p:949, st:'plain', hit:1,
+  d:'Premium-силікон: MagSafe, мікрофібра, soft-touch, колір логотипа в колір бокових кнопок.',
+  m:['17','17 Pro','17 Pro Max'],
+  cols:[['Coral',C.red],['Black',C.black],['Blue',C.blue],['Green',C.green],['White',C.white]], s:'DcxrVr_CB90'},
+ {id:'sil-chalk', n:'SILICONE CASE — Chalk Pink', c:'sil', p:1100, st:'plain',
+  d:'Premium-серія з MagSafe. Бортики навколо екрана та камери, лише офіційні кольори.',
+  m:['17 Pro','17 Pro Max'], cols:[['Chalk Pink',C.chalk]], s:'DdRxAxHEaZE'},
+ {id:'sil-pink', n:'SILICONE CASE — Trend Pink', c:'sil', p:1100, st:'plain',
+  d:'Premium-серія, MagSafe, мікрофібра всередині, приємне soft-touch покриття.',
+  m:['17 Pro','17 Pro Max'], cols:[['Pink',C.pink]], s:'DcLqtW9iKw7'},
+ {id:'sil-blue', n:'SILICONE CASE — Dark Blue', c:'sil', p:null, st:'plain',
+  d:'Бортики вище екрана та камери, мʼяка мікрофібра, закритий низ.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['Dark Blue',C.blue]], s:'Dck8Qn2iEV9'},
+ {id:'sil-aut', n:'SILICONE CASE — Autumn', c:'sil', p:199, st:'plain',
+  d:'Осіння палітра. Soft-touch, мікрофібра, захист камери й екрана.',
+  m:['17','17 Pro','17 Pro Max'],
+  cols:[['Brown',C.brown],['Green',C.green],['Orange',C.orange],['Bordo',C.bordo]], s:'Dc57woYCM8_'},
+ {id:'sil-base', n:'SILICONE CASE — базовий', c:'sil', p:199, st:'plain',
+  d:'Преміальне силіконове покриття Soft Touch, піднятий бортик камери, мікрофібра всередині.',
+  m:['17','17 Pro','17 Pro Max'],
+  cols:[['Yellow','#f0dd8a'],['Black',C.black],['White',C.white],['Blue',C.blue],['Pink',C.pink]], s:'DbnNy5aiFL9'},
+ {id:'sil-bord', n:'BORDEAUX CASE', c:'sil', p:199, st:'plain',
+  d:'Стриманий винний відтінок, який набирає шаленої популярності.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['Bordo',C.bordo]], s:'DcxuXtYCHr9'},
+ {id:'tech', n:'TECHWOVEN CASE', c:'fabric', p:1499, st:'woven', nw:1,
+  d:'Текстурована тканинна поверхня преміум-класу. Комфортний хват, приємні тактильні відчуття.',
+  m:['17 Pro','17 Pro Max'], cols:[['Green',C.green],['Black',C.black],['Beige',C.beige],['Blue',C.blue]], s:'DdGjQ0rCHrE'},
+ {id:'leo', n:'LEO LEATHER CASE', c:'leather', p:549, st:'leather',
+  d:'Приємна на дотик PU-шкіра, повністю закритий блок камери, дизайн 17-ї серії.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['Brown',C.brown],['Black',C.black]], s:'DbJM62MCBvf'},
+ {id:'beats', n:'CASE у стилі BEATS', c:'other', p:1599, st:'plain',
+  d:'Міцна полікарбонатна задня частина з гнучкими боковинами для амортизації.',
+  m:['17 Pro','17 Pro Max'], cols:[['Pink',C.pink],['Orange',C.orange],['Beige',C.beige]], s:'DbYViiTCFKO'},
+ {id:'ip17', n:'CASE у стилі iPhone 17', c:'other', p:599, st:'plain',
+  d:'Сучасний дизайн з імітацією зовнішнього вигляду 17-ї лінійки для попередніх моделей.',
+  m:['17','17 Pro','17 Pro Max'], cols:[['White',C.white],['Black',C.black]], s:'Dcd7hbsCJFy'}
+];
+
+/* ============ ХЕЛПЕРИ ============ */
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const uah = n => n.toLocaleString('uk-UA') + ' грн';
+const pic = (id, cls) =>
+  `<img class="shotimg ${cls||''}" src="img/${id}.jpg" alt="" loading="lazy" decoding="async"
+        onerror="this.style.display='none';this.insertAdjacentHTML('afterend', this.dataset.fb||'')"
+        data-fb="">`;
+const phoneHTML = (color, st) =>
+  `<div class="ph ${st==='clear'?'clear':st==='ribbed'?'ribbed':st==='woven'?'woven':st==='leather'?'leather':''}" style="background-color:${color}">
+     <div class="cam"><i></i><i></i><i></i></div></div>`;
+
+function toast(text){
+  const t = document.createElement('div');
+  t.className = 'toast'; t.textContent = text;
+  $('#toasts').appendChild(t);
+  setTimeout(()=>{ t.style.transition='opacity .3s'; t.style.opacity='0'; setTimeout(()=>t.remove(),320); }, 2400);
+}
+
+/* ============ КАТЕГОРІЇ ============ */
+function buildCats(){
+  const used = [...new Set(P.map(p=>p.c))];
+  $('#cats').innerHTML = used.map(k=>{
+    const items = P.filter(p=>p.c===k);
+    const sw = [...new Set(items.flatMap(i=>i.cols.map(c=>c[1])))].slice(0,5);
+    const min = Math.min(...items.filter(i=>i.p).map(i=>i.p));
+    return `<button class="cat-t" data-k="${k}">
+      <div class="sw">${sw.map(c=>`<i style="background:${c}"></i>`).join('')}</div>
+      <b>${CAT[k]}</b><span>${items.length} позиц. · від ${min} грн</span></button>`;
+  }).join('');
+  $$('.cat-t').forEach(b=>b.onclick=()=>{
+    state.cat = b.dataset.k; buildChips(); render();
+    $('#catalog').scrollIntoView({behavior:'smooth'});
+  });
+}
+
+/* ============ ФІЛЬТРИ ============ */
+const state = { cat:'all', q:'', model:'', sort:'pop' };
+
+function buildChips(){
+  const used = [...new Set(P.map(p=>p.c))];
+  const list = [['all','Усе'],...used.map(k=>[k,CAT[k]]),['straps',CAT.straps],['glass',CAT.glass],['custom',CAT.custom]];
+  $('#chips').innerHTML = list.map(([k,l])=>
+    `<button class="chip" data-k="${k}" aria-pressed="${k===state.cat}">${l}</button>`).join('');
+  $$('#chips .chip').forEach(b=>b.onclick=()=>{ state.cat=b.dataset.k; buildChips(); render(); });
+}
+
+function filtered(){
+  let r = P.filter(p=>{
+    if(state.cat!=='all' && p.c!==state.cat) return false;
+    if(state.model && !p.m.includes(state.model)) return false;
+    if(state.q){
+      const hay = (p.n+' '+p.d+' '+CAT[p.c]+' '+p.cols.map(c=>c[0]).join(' ')).toLowerCase();
+      if(!hay.includes(state.q.toLowerCase())) return false;
+    }
+    return true;
+  });
+  const s = state.sort;
+  if(s==='asc')  r.sort((a,b)=>(a.p??1e9)-(b.p??1e9));
+  if(s==='desc') r.sort((a,b)=>(b.p??-1)-(a.p??-1));
+  if(s==='new')  r.sort((a,b)=>(b.nw?1:0)-(a.nw?1:0));
+  if(s==='pop')  r.sort((a,b)=>((b.hit?2:0)+(b.nw?1:0))-((a.hit?2:0)+(a.nw?1:0)));
+  return r;
+}
+
+const sel = {}; // id -> індекс обраного кольору
+
+function render(){
+  const items = filtered();
+  $('#none').style.display = items.length ? 'none' : 'block';
+  $('#found').textContent = items.length
+    ? `Знайдено ${items.length} ${items.length===1?'позицію':items.length<5?'позиції':'позицій'}`
+    : '';
+  $('#grid').innerHTML = items.map((p,i)=>{
+    const ci = sel[p.id] ?? 0;
+    const col = p.cols[ci][1];
+    const price = p.p ? `<div class="price">${p.p.toLocaleString('uk-UA')}<small>грн</small></div>`
+                      : `<div class="price ask">Ціна за запитом</div>`;
+    return `<article class="card rv" style="transition-delay:${Math.min(i,8)*45}ms" data-id="${p.id}">
+      <div class="media" data-pv="${p.id}">
+        <div class="tags">
+          ${p.hit?'<span class="tag hit">Хіт</span>':''}
+          ${p.nw?'<span class="tag new">Новинка</span>':''}
+        </div>
+        ${pic(p.id)}
+        <div class="quick">
+          <button data-pv="${p.id}">Детальніше</button>
+          <button data-add="${p.id}">Швидко в кошик</button>
+        </div>
+      </div>
+      <div class="cbody">
+        <div class="kicker">${CAT[p.c]}</div>
+        <h3 class="cname" data-pv="${p.id}">${esc(p.n)}</h3>
+        <div class="swatches">${p.cols.map((c,k)=>
+          `<i title="${esc(c[0])}" style="background:${c[1]}" data-sw="${p.id}" data-k="${k}" data-on="${k===ci?1:0}"></i>`).join('')}</div>
+        <div class="meta">${p.m.join(' · ')}</div>
+        <div class="stock"><i></i>В наявності</div>
+        <div class="cfoot">${price}<button class="add" data-add="${p.id}">У кошик</button></div>
+      </div>
+    </article>`;
+  }).join('');
+  bindCards();
+  observe();
+}
+
+function bindCards(){
+  $$('[data-sw]').forEach(el=>el.onclick=e=>{
+    e.stopPropagation();
+    sel[el.dataset.sw] = +el.dataset.k;
+    const card = el.closest('.card');
+    card.querySelectorAll('[data-sw]').forEach(s=>s.dataset.on = s===el?'1':'0');
+  });
+  $$('[data-pv]').forEach(el=>el.onclick=e=>{ e.stopPropagation(); openPV(el.dataset.pv); });
+  $$('[data-add]').forEach(el=>el.onclick=e=>{
+    e.stopPropagation();
+    const p = P.find(x=>x.id===el.dataset.add);
+    addToCart(p, p.cols[sel[p.id]??0][0], p.m[0], 1);
+    if(el.classList.contains('add')){
+      el.classList.add('added'); el.textContent='Додано ✓';
+      setTimeout(()=>{ el.classList.remove('added'); el.textContent='У кошик'; }, 1300);
+    }
+  });
+}
+
+/* ============ REVEAL ============ */
+let io;
+function observe(){
+  if(!io) io = new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {rootMargin:'0px 0px -8% 0px', threshold:.06});
+  $$('.rv:not(.in)').forEach(el=>io.observe(el));
+}
+
+/* ============ МОДАЛКА ТОВАРУ ============ */
+let pvCur = null, pvQ = 1, pvC = 0;
+function openPV(id){
+  const p = P.find(x=>x.id===id); if(!p) return;
+  pvCur = p; pvQ = 1; pvC = sel[id] ?? 0;
+  $('#pvTitle').textContent = p.n;
+  $('#pvCat').textContent = CAT[p.c];
+  $('#pvDesc').textContent = p.d;
+  $('#pvModel').innerHTML = p.m.map(m=>`<option>${m}</option>`).join('');
+  $('#pvQty').querySelector('span').textContent = 1;
+  $('#pvPrice').className = 'price' + (p.p?'':' ask');
+  $('#pvPrice').innerHTML = p.p ? `${p.p.toLocaleString('uk-UA')}<small>грн</small>` : 'Ціна за запитом';
+  drawPV();
+  open($('#pvModal'));
+}
+function drawPV(){
+  const p = pvCur;
+  $('#pvShot').innerHTML = pic(p.id);
+  $('#pvSw').innerHTML = p.cols.map((c,k)=>
+    `<i title="${esc(c[0])}" style="background:${c[1]}" data-k="${k}" data-on="${k===pvC?1:0}"></i>`).join('');
+  $$('#pvSw i').forEach(el=>el.onclick=()=>{ pvC=+el.dataset.k; sel[p.id]=pvC; $$('#pvSw i').forEach(s=>s.dataset.on = s===el?'1':'0'); });
+}
+$('#pvQty').onclick = e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  pvQ = Math.max(1, Math.min(20, pvQ + (+b.dataset.d)));
+  $('#pvQty').querySelector('span').textContent = pvQ;
+};
+$('#pvAdd').onclick = ()=>{
+  addToCart(pvCur, pvCur.cols[pvC][0], $('#pvModel').value, pvQ);
+  close($('#pvModal'));
+};
+
+/* ============ КОШИК (в памʼяті сторінки) ============ */
+let cart = [];
+function addToCart(p, color, model, qty){
+  const key = p.id+'|'+color+'|'+model;
+  const ex = cart.find(i=>i.key===key);
+  if(ex) ex.qty = Math.min(20, ex.qty+qty);
+  else cart.push({key, id:p.id, n:p.n, p:p.p, color, model, qty, st:p.st,
+                  hex:(p.cols.find(c=>c[0]===color)||p.cols[0])[1]});
+  drawCart(); bump();
+  toast(`${p.n} — додано в кошик`);
+}
+function bump(){
+  const n = cart.reduce((s,i)=>s+i.qty,0);
+  const b = $('#cartBadge');
+  b.textContent = n; b.classList.toggle('on', n>0);
+  b.animate([{transform:'scale(1)'},{transform:'scale(1.35)'},{transform:'scale(1)'}],{duration:320,easing:'ease-out'});
+}
+function total(){ return cart.reduce((s,i)=>s+(i.p||0)*i.qty,0); }
+function drawCart(){
+  const body = $('#cartBody'), foot = $('#cartFoot');
+  if(!cart.length){
+    foot.style.display='none';
+    body.innerHTML = `<div class="empty-cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h2.2l2.3 12.2a2 2 0 0 0 2 1.6h8.3a2 2 0 0 0 2-1.6L21 7H5.4"/></svg>
+      <div>Кошик поки порожній</div>
+      <div style="margin-top:16px"><button class="btn btn-ghost" data-close>Обрати чохол</button></div></div>`;
+    body.querySelector('[data-close]').onclick = closeAll;
+    return;
+  }
+  foot.style.display='block';
+  body.innerHTML = cart.map(i=>`<div class="ci">
+    <div class="thumb">${pic(i.id)}</div>
+    <div>
+      <b>${esc(i.n)}</b>
+      <div class="s">${esc(i.color)} · ${esc(i.model)}</div>
+      <div class="qty" data-key="${esc(i.key)}"><button data-d="-1">−</button><span>${i.qty}</span><button data-d="1">+</button></div>
+      <button class="rm" data-rm="${esc(i.key)}">Видалити</button>
+    </div>
+    <div style="text-align:right;font-weight:800;white-space:nowrap">${i.p?uah(i.p*i.qty):'за запитом'}</div>
+  </div>`).join('');
+  $('#cCount').textContent = cart.reduce((s,i)=>s+i.qty,0);
+  $('#cTotal').textContent = uah(total());
+  body.querySelectorAll('.qty').forEach(q=>q.onclick=e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    const it = cart.find(i=>i.key===q.dataset.key);
+    it.qty += (+b.dataset.d);
+    if(it.qty<1) cart = cart.filter(i=>i!==it);
+    drawCart(); bump();
+  });
+  body.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{
+    cart = cart.filter(i=>i.key!==b.dataset.rm); drawCart(); bump();
+  });
+}
+
+/* ============ ОВЕРЛЕЇ ============ */
+function open(el){ $('#scrim').classList.add('on'); el.classList.add('on'); document.body.style.overflow='hidden'; }
+function close(el){ el.classList.remove('on'); if(!$$('.drawer.on,.modal.on').length){ $('#scrim').classList.remove('on'); document.body.style.overflow=''; } }
+function closeAll(){ $$('.drawer.on,.modal.on').forEach(e=>e.classList.remove('on')); $('#scrim').classList.remove('on'); document.body.style.overflow=''; }
+$('#scrim').onclick = closeAll;
+document.addEventListener('click', e=>{ if(e.target.closest('[data-close]')) closeAll(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeAll(); });
+$('#openCart').onclick = ()=>{ drawCart(); open($('#cart')); };
+
+/* ============ ОФОРМЛЕННЯ ============ */
+let step = 1;
+$('#toCheckout').onclick = ()=>{
+  if(!cart.length) return;
+  close($('#cart')); step = 1; paintStep();
+  $('#coForm').hidden = false; $('#coDone').hidden = true; $('#coFoot').style.display='block';
+  $('#coTitle').textContent = 'Оформлення замовлення';
+  open($('#coModal'));
+};
+function paintStep(){
+  $$('#coForm [data-step]').forEach(d=>d.hidden = (+d.dataset.step !== step));
+  $$('#coSteps .step').forEach((s,i)=>{ s.className = 'step' + (i+1<step?' fin':i+1===step?' now':''); });
+  $('#coBack').style.display = step>1 ? 'inline-flex' : 'none';
+  $('#coNext').textContent = step<3 ? 'Далі' : 'Підтвердити замовлення';
+  if(step===3) paintSum();
+}
+function paintSum(){
+  $('#coSum').innerHTML = cart.map(i=>
+    `<div class="line"><span>${esc(i.n)} · ${esc(i.color)} · ${esc(i.model)} × ${i.qty}</span>
+     <span style="color:var(--ink);font-weight:650">${i.p?uah(i.p*i.qty):'за запитом'}</span></div>`).join('')
+    + `<div class="line"><span>Доставка</span><span>за тарифами НП</span></div>
+       <div class="line total" style="margin-bottom:0"><span>До сплати</span><span>${uah(total())}</span></div>`;
+}
+function bad(el,on){ el.classList.toggle('err',on); const t=el.parentElement.querySelector('.errtxt'); if(t) t.classList.toggle('on',on); }
+function validStep(){
+  let ok = true;
+  if(step===1){
+    const n=$('#fName'), ph=$('#fPhone');
+    const nOk = n.value.trim().length>1; bad(n,!nOk); ok = ok && nOk;
+    const pOk = (ph.value.replace(/\D/g,'').length>=9); bad(ph,!pOk); ok = ok && pOk;
+  }
+  if(step===2){
+    const isPickup = $('#fShip').value.startsWith('Самовивіз');
+    const c=$('#fCity'), b=$('#fBranch');
+    if(isPickup){ bad(c,false); bad(b,false); }
+    else{
+      const cOk=c.value.trim().length>1; bad(c,!cOk); ok = ok && cOk;
+      const bOk=b.value.trim().length>0; bad(b,!bOk); ok = ok && bOk;
+    }
+  }
+  return ok;
+}
+$('#coBack').onclick = ()=>{ step = Math.max(1, step-1); paintStep(); };
+$('#coNext').onclick = async ()=>{
+  if(!validStep()) return;
+  if(step<3){ step++; paintStep(); return; }
+  const btn = $('#coNext'); btn.disabled = true; btn.textContent = 'Надсилаємо…';
+  const f = new FormData($('#coForm'));
+  if(f.get('website')){ btn.disabled=false; return; }
+  const order = {
+    name:f.get('name'), phone:f.get('phone'), email:f.get('email'),
+    shipping:f.get('shipping'), city:f.get('city'), branch:f.get('branch'),
+    note:f.get('note'), payment:f.get('payment'),
+    total: total(),
+    items: cart.map(i=>({name:i.n, color:i.color, model:i.model, qty:i.qty, price:i.p})),
+    source:'baza-case catalog'
+  };
+  let ok = false, demo = false;
+  try{
+    const r = await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(order)});
+    ok = r.ok;
+  }catch(e){ ok = false; }
+  // локальний перегляд файлу: показуємо весь шлях, але чесно позначаємо, що заявка не пішла
+  if(!ok && location.protocol === 'file:'){ ok = true; demo = true; }
+  btn.disabled = false; btn.textContent = 'Підтвердити замовлення';
+  if(!ok){ toast('Не вдалося надіслати. Напишіть у Direct @baza_case_'); return; }
+  $('#coNum').textContent = 'BC-' + String(Date.now()).slice(-6);
+  $('#coDemo').hidden = !demo;
+  $('#coForm').hidden = true; $('#coDone').hidden = false; $('#coFoot').style.display='none';
+  $('#coTitle').textContent = 'Готово';
+  cart = []; drawCart(); bump();
+};
+$('#fShip').onchange = ()=>{
+  const pickup = $('#fShip').value.startsWith('Самовивіз');
+  $('#fCity').parentElement.style.display = pickup ? 'none' : '';
+  $('#fBranch').parentElement.style.display = pickup ? 'none' : '';
+};
+
+/* ============ ІНШЕ ============ */
+$('#q').oninput = e=>{ state.q = e.target.value.trim(); render(); };
+$('#fModel').onchange = e=>{ state.model = e.target.value; render(); };
+$('#fSort').onchange = e=>{ state.sort = e.target.value; render(); };
+$('#reset').onclick = ()=>{ state.cat='all'; state.q=''; state.model=''; $('#q').value=''; $('#fModel').value=''; buildChips(); render(); };
+const toTopBtn = $('#toTop');
+addEventListener('scroll', ()=> toTopBtn.classList.toggle('on', scrollY>700), {passive:true});
+toTopBtn.onclick = ()=> scrollTo({top:0,behavior:'smooth'});
+
+buildCats(); buildChips(); render(); observe(); drawCart();
+</script>
+</body>
+</html>
