@@ -540,7 +540,7 @@ footer a:hover{color:var(--ink)}
         <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></svg></div>
         <h3>Замовлення прийнято</h3>
         <p>Ми вже його бачимо і скоро зв'яжемось, щоб підтвердити деталі.</p>
-        <p id="coDemo" hidden style="color:var(--warn);background:var(--warn-s);border-radius:10px;padding:10px 14px;display:inline-block">Локальний перегляд: заявка нікуди не відправлена. На сервері вона піде в Telegram.</p>
+        <p id="coDemo" hidden style="color:var(--warn);background:var(--warn-s);border-radius:10px;padding:10px 14px;display:inline-block">Демо-режим: приймання заявок ще не підключене, тому це замовлення нікуди не відправлено. На робочому хостингу воно піде в Telegram за секунду.</p>
         <div class="onum" id="coNum"></div>
         <div><button class="btn btn-ghost" data-close>Продовжити покупки</button></div>
       </div>
@@ -915,9 +915,10 @@ $('#coNext').onclick = async ()=>{
   try{
     const r = await fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(order)});
     ok = r.ok;
+    // бекенда на цьому хостингу немає (напр. GitHub Pages) — це демо, а не поламана форма
+    if(!ok && (r.status === 404 || r.status === 405)) demo = true;
   }catch(e){ ok = false; }
-  // локальний перегляд файлу: показуємо весь шлях, але чесно позначаємо, що заявка не пішла
-  if(!ok && location.protocol === 'file:'){ ok = true; demo = true; }
+  if(!ok && (demo || location.protocol === 'file:')){ ok = true; demo = true; }
   btn.disabled = false; btn.textContent = 'Підтвердити замовлення';
   if(!ok){ toast('Не вдалося надіслати. Напишіть у Direct @baza_case_'); return; }
   $('#coNum').textContent = 'BC-' + String(Date.now()).slice(-6);
