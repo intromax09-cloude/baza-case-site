@@ -8,16 +8,25 @@
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 <link rel="icon" type="image/png" sizes="64x64" href="favicon-64.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://intromax09-cloude.github.io/baza-case-site/">
 <meta name="theme-color" content="#0b0b0e">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BAZA CASE">
-<meta property="og:image" content="og.jpg">
+<meta property="og:url" content="https://intromax09-cloude.github.io/baza-case-site/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:image" content="https://intromax09-cloude.github.io/baza-case-site/og.jpg">
+<meta property="og:image:alt" content="BAZA CASE — чохли для iPhone">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="og.jpg">
+<meta name="twitter:title" content="BAZA CASE — чохли та аксесуари для iPhone">
+<meta name="twitter:description" content="Оригінальна якість, наявність на 17 і 18 серію. Відправка в день замовлення.">
+<meta name="twitter:image" content="https://intromax09-cloude.github.io/baza-case-site/og.jpg">
 <meta property="og:title" content="BAZA CASE — чохли та аксесуари для iPhone">
 <meta property="og:description" content="Оригінальна якість, наявність на 17 і 18 серію. Відправка в день замовлення.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"BAZA CASE","url":"https://intromax09-cloude.github.io/baza-case-site/","logo":"https://intromax09-cloude.github.io/baza-case-site/img/logo.png","image":"https://intromax09-cloude.github.io/baza-case-site/og.jpg","description":"Чохли для iPhone: силікон, прозорі, RIMOWA, шкіра, текстиль. Офлайн-магазин у Рожищі, відправка Новою Поштою.","address":{"@type":"PostalAddress","streetAddress":"вул. Незалежності 18","addressLocality":"Рожище","addressCountry":"UA"},"sameAs":["https://www.instagram.com/baza_case_/"]}
+</script>
 <style>
 :root{
   --bg:#ffffff; --surf:#f7f7f9; --surf2:#f1f1f4;
@@ -310,7 +319,7 @@ footer a:hover{color:var(--ink)}
 <header>
   <div class="wrap hd">
     <a class="brand" href="#top"><img class="dot" src="img/logo.png" alt="BAZA CASE" width="30" height="30">BAZA<em>CASE</em></a>
-    <nav class="main">
+    <nav class="main" aria-label="Основна навігація">
       <a href="#catalog">Каталог</a>
       <a href="#why">Чому ми</a>
       <a href="#delivery">Доставка і оплата</a>
@@ -464,7 +473,7 @@ footer a:hover{color:var(--ink)}
 <div class="scrim" id="scrim"></div>
 
 <!-- CART -->
-<aside class="drawer" id="cart" aria-label="Кошик">
+<aside class="drawer" id="cart" role="dialog" aria-modal="true" aria-label="Кошик">
   <div class="dhead">
     <h3>Кошик</h3>
     <button class="close" data-close aria-label="Закрити">✕</button>
@@ -479,7 +488,7 @@ footer a:hover{color:var(--ink)}
 </aside>
 
 <!-- PRODUCT MODAL -->
-<div class="modal" id="pvModal">
+<div class="modal" id="pvModal" role="dialog" aria-modal="true" aria-labelledby="pvTitle">
   <div class="sheet">
     <div class="dhead"><h3 id="pvTitle">Товар</h3><button class="close" data-close aria-label="Закрити">✕</button></div>
     <div class="sbody"><div class="pv">
@@ -490,7 +499,7 @@ footer a:hover{color:var(--ink)}
         <div class="fg"><label>Колір</label><div class="swatches" id="pvSw"></div></div>
         <div class="fg"><label for="pvModel">Модель</label><select class="fld" id="pvModel"></select></div>
         <div class="fg"><label>Кількість</label>
-          <div class="qty" id="pvQty"><button data-d="-1">−</button><span>1</span><button data-d="1">+</button></div>
+          <div class="qty" id="pvQty"><button data-d="-1" aria-label="Менше">−</button><span>1</span><button data-d="1" aria-label="Більше">+</button></div>
         </div>
         <div class="cfoot" style="padding-top:4px">
           <div class="price" id="pvPrice"></div>
@@ -502,7 +511,7 @@ footer a:hover{color:var(--ink)}
 </div>
 
 <!-- CHECKOUT MODAL -->
-<div class="modal" id="coModal">
+<div class="modal" id="coModal" role="dialog" aria-modal="true" aria-labelledby="coTitle">
   <div class="sheet">
     <div class="dhead"><h3 id="coTitle">Оформлення замовлення</h3><button class="close" data-close aria-label="Закрити">✕</button></div>
     <div class="steps" id="coSteps">
@@ -513,8 +522,8 @@ footer a:hover{color:var(--ink)}
         <!-- step 1 -->
         <div data-step="1">
           <div class="row2">
-            <div class="fg"><label for="fName">Ім'я та прізвище *</label><input class="fld" id="fName" name="name" placeholder="Олена Ковальчук" autocomplete="name"><div class="errtxt">Вкажіть ім'я</div></div>
-            <div class="fg"><label for="fPhone">Телефон *</label><input class="fld" id="fPhone" name="phone" inputmode="tel" placeholder="+380 __ ___ __ __" autocomplete="tel"><div class="errtxt">Вкажіть коректний телефон</div></div>
+            <div class="fg"><label for="fName">Ім'я та прізвище *</label><input class="fld" id="fName" aria-required="true" name="name" placeholder="Олена Ковальчук" autocomplete="name"><div class="errtxt" role="alert">Вкажіть ім'я</div></div>
+            <div class="fg"><label for="fPhone">Телефон *</label><input class="fld" id="fPhone" aria-required="true" name="phone" inputmode="tel" placeholder="+380 __ ___ __ __" autocomplete="tel"><div class="errtxt" role="alert">Вкажіть коректний телефон</div></div>
           </div>
           <div class="fg"><label for="fMail">E-mail (необов'язково)</label><input class="fld" id="fMail" name="email" type="email" placeholder="для електронної накладної" autocomplete="email"></div>
         </div>
@@ -528,8 +537,8 @@ footer a:hover{color:var(--ink)}
             </select>
           </div>
           <div class="row2">
-            <div class="fg"><label for="fCity">Місто *</label><input class="fld" id="fCity" name="city" placeholder="Луцьк"><div class="errtxt">Вкажіть місто</div></div>
-            <div class="fg"><label for="fBranch">Відділення / адреса *</label><input class="fld" id="fBranch" name="branch" placeholder="НП №7 або вулиця, будинок"><div class="errtxt">Вкажіть відділення або адресу</div></div>
+            <div class="fg"><label for="fCity">Місто *</label><input class="fld" id="fCity" aria-required="true" name="city" placeholder="Луцьк"><div class="errtxt" role="alert">Вкажіть місто</div></div>
+            <div class="fg"><label for="fBranch">Відділення / адреса *</label><input class="fld" id="fBranch" aria-required="true" name="branch" placeholder="НП №7 або вулиця, будинок"><div class="errtxt" role="alert">Вкажіть відділення або адресу</div></div>
           </div>
           <div class="fg"><label for="fNote">Коментар до замовлення</label><textarea class="fld" id="fNote" name="note" placeholder="Бажаний колір, побажання по упаковці, питання"></textarea></div>
         </div>
@@ -565,7 +574,7 @@ footer a:hover{color:var(--ink)}
   </div>
 </div>
 
-<div class="toasts" id="toasts"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
 
 <script>
 /* ============ ДАНІ. Зібрано з постів @baza_case_ 20.09.2026 ============ */
@@ -642,7 +651,7 @@ const $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 const uah = n => n.toLocaleString('uk-UA') + ' грн';
 const pic = (id, cls) =>
-  `<img class="shotimg ${cls||''}" src="img/${id}.jpg" alt="" loading="lazy" decoding="async"
+  `<img class="shotimg ${cls||''}" src="img/${id}.jpg" alt="${esc((P.find(x=>x.id===id)||{}).n||'')}" loading="lazy" decoding="async"
         onerror="this.style.display='none';this.insertAdjacentHTML('afterend', this.dataset.fb||'')"
         data-fb="">`;
 const phoneHTML = (color, st) =>
@@ -837,8 +846,8 @@ function drawCart(){
     <div>
       <b>${esc(i.n)}</b>
       <div class="s">${esc(i.color)} · ${esc(i.model)}</div>
-      <div class="qty" data-key="${esc(i.key)}"><button data-d="-1">−</button><span>${i.qty}</span><button data-d="1">+</button></div>
-      <button class="rm" data-rm="${esc(i.key)}">Видалити</button>
+      <div class="qty" data-key="${esc(i.key)}"><button data-d="-1" aria-label="Менше">−</button><span>${i.qty}</span><button data-d="1" aria-label="Більше">+</button></div>
+      <button class="rm" data-rm="${esc(i.key)}" aria-label="Видалити ${esc(i.n)} з кошика">Видалити</button>
     </div>
     <div style="text-align:right;font-weight:800;white-space:nowrap">${i.p?uah(i.p*i.qty):'за запитом'}</div>
   </div>`).join('');
